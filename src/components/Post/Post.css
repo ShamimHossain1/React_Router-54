@@ -1,0 +1,9 @@
+.post{
+    border: solid 2px green ;
+    padding: 40px;
+    border-radius: 5px;
+}
+.details {
+    text-decoration: none;
+    font-size: large;
+}
