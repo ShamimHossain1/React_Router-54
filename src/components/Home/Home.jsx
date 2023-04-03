@@ -1,12 +1,14 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigation } from 'react-router-dom';
 import Header from '../Header/Header';
+import './Home.css'
 
 const Home = () => {
+    const navigation = useNavigation();
     return (
         <div>
             <Header></Header>
-            <h1>This is home</h1>
+            <div className='loading'>{navigation.state === 'loading' && 'please wait'}</div>
             <Outlet></Outlet>
         </div>
     );
