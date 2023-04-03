@@ -8,7 +8,7 @@ const Posts = () => {
     console.log(datas)
     return (
         <div>
-            <h1 className='postHere'>Here is Post</h1>
+            <h1 className='postHere'>Here is total {datas.length} Post</h1>
             <div className='posts'>
                 {
                     datas.map(data=> <Post
